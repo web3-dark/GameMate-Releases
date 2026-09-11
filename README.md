@@ -1,0 +1,1 @@
+# GameMate Releases\n\nGameMate Windows 桌面 AI 语音陪伴助手的官网与公开发行仓库。\n\n- 官网：https://web3-dark.github.io/GameMate-Releases/\n- 下载：请从官网或 GitHub Releases 获取安装版和便携版。\n- 源码仓库保持私有；公开仓库只包含静态官网与发行资产。\n\n安装版支持在设置中手动检查更新。当前预览版未配置代码签名，运行前请核对官网显示的 SHA-256 校验值。\n

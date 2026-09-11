@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f7f5"><meta name="description" content="安装 GameMate Windows 预览版，启动本地服务并检查 AI 与语音连接。"><title>安装与连接 | GameMate</title><link rel="icon" href="./assets/icon.png" type="image/png"><link rel="stylesheet" href="./styles.css"><script src="./app.js" defer></script></head>
+<body><a class="skip-link" href="#main">跳到主要内容</a><header class="site-header"><div class="header-inner wrap"><a class="brand" href="./" aria-label="GameMate 首页"><svg aria-hidden="true"><use href="./assets/icons.svg#gamepad-2"></use></svg><span>GameMate</span></a><nav class="desktop-nav" aria-label="主要导航"><a href="./#experience">陪伴体验</a><a href="./#games">游戏支持</a><a href="./#download">下载</a><a href="./#faq">常见问题</a></nav><div class="header-actions"><a class="button button-small button-dark" href="./#download">下载预览版 <svg aria-hidden="true"><use href="./assets/icons.svg#download"></use></svg></a></div></div></header>
+<main id="main" class="document-main"><div class="document-header wrap"><p class="eyebrow">INSTALL & CONNECT</p><h1>安装与连接</h1><p>桌面安装包、AI 服务与语音识别分别部署。下面从安装桌面端开始，说明本地运行所需的步骤。</p></div><div class="document-content">
+<section><h2>1. 安装桌面预览版</h2><p>在 Windows 11 x64 电脑下载本页提供的安装版或便携版。安装版运行后按向导选择安装目录；便携版直接运行下载的 EXE。建议先对照下载区提供的 SHA-256 核对文件。</p><p>当前预览包未进行代码签名。Windows 可能显示未知发布者或 SmartScreen 提示；请核对来源与校验值后自行决定是否运行，不要关闭系统安全功能。</p><pre><code>Get-FileHash .\GameMate-Setup-0.2.0-x64.exe -Algorithm SHA256</code></pre><p><a href="./#download">返回下载区</a></p></section>
+<section><h2>2. 准备本地服务端</h2><p>桌面应用默认连接 <code>http://127.0.0.1:8787</code>，安装器不会启动该服务。公开发行仓库只提供桌面端和官网，服务端源码与部署包由项目维护者单独提供；如果你已获得源码访问权限，请使用与桌面版本对应的源码标签，在 Windows 终端安装 Node.js 20 及以上与 pnpm 9.15.0 后执行：</p><pre><code>corepack enable
+corepack prepare pnpm@9.15.0 --activate
+pnpm.cmd install --frozen-lockfile
+pnpm.cmd build:server</code></pre><p>若你没有服务端源码或准备使用托管服务，请联系项目维护者获取对应部署地址。不要从陌生来源下载替代服务端。</p></section>
+<section><h2>3. 配置模型并启动服务</h2><p>在项目根目录从示例创建本机配置：</p><pre><code>Copy-Item .env.example .env</code></pre><p>使用文本编辑器打开 <code>.env</code>，填写你有权使用的模型服务地址、模型名和 API Key。不要提交或公开这个文件。以下只列出相关配置项，不包含可直接使用的凭据：</p><pre><code>HOST=127.0.0.1
+PORT=8787
+OPENAI_API_KEY=
+OPENAI_BASE_URL=
+REASON_MODEL=
+ASR_URL=http://127.0.0.1:8810</code></pre><p>完成配置后启动服务。终端需保持运行；这不会自动安装或启动语音识别模型。</p><pre><code>pnpm.cmd start:server</code></pre><p>没有模型凭据时，界面和部分本地降级功能仍可运行，不代表在线 AI 对话已经连接。</p></section>
+<section><h2>4. 检查连接和语音</h2><p>打开 GameMate，在设置的运行诊断中检查服务、模型、ASR 和声音状态。也可在终端检查服务健康接口：</p><pre><code>Invoke-RestMethod http://127.0.0.1:8787/health</code></pre><p>文字 AI 对话依赖模型服务。按键说话与持续语音的转写还需要单独部署 Qwen3-ASR 兼容服务，并设置正确的 <code>ASR_URL</code>。语音播报使用本机可用的系统声音。ASR 未连接时请先使用文字对话，不要把系统播报成功当作语音识别已经正常。</p><p>默认安装包的服务地址在构建时配置；如需其他地址，需重新构建桌面端并设置 <code>VITE_SERVER_URL</code>。本预览版不提供托管 AI 服务。</p></section>
+<section><h2>5. 更新桌面与服务</h2><p>安装版可从设置中检查更新，下载后由你确认重启安装。便携版通过重新下载更新。服务端独立更新；更换桌面版本时，请对照更新日志同步构建对应服务端，保留你自己的配置。</p><p><a href="./changelog.html">查看更新日志</a></p></section>
+</div></main><footer class="site-footer"><div class="wrap footer-top"><a class="brand" href="./"><svg aria-hidden="true"><use href="./assets/icons.svg#gamepad-2"></use></svg><span>GameMate</span></a><p>这局，我在旁边。</p><nav aria-label="页脚导航"><a href="./">首页</a><a href="./privacy.html">隐私说明</a><a href="./changelog.html">更新日志</a></nav></div><div class="wrap footer-bottom"><span>GameMate · Windows 预览版</span><span>API Key 与模型配置仅保存在你管理的服务环境中。</span></div></footer></body></html>

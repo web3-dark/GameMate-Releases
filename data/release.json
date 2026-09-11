@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "version": "0.2.0",
+  "publishedAt": null,
+  "builtAt": "2026-09-11T17:15:50.904Z",
+  "channel": "preview",
+  "repository": {
+    "owner": "web3-dark",
+    "name": "GameMate-Releases",
+    "url": "https://github.com/web3-dark/GameMate-Releases"
+  },
+  "releaseUrl": "https://github.com/web3-dark/GameMate-Releases/releases/tag/v0.2.0",
+  "websiteUrl": "https://web3-dark.github.io/GameMate-Releases/",
+  "distribution": "github",
+  "updateFeed": "https://github.com/web3-dark/GameMate-Releases/releases/latest/download/latest.yml",
+  "signed": false,
+  "downloads": [
+    {
+      "kind": "installer",
+      "platform": "windows",
+      "arch": "x64",
+      "name": "GameMate-Setup-0.2.0-x64.exe",
+      "url": "https://github.com/web3-dark/GameMate-Releases/releases/download/v0.2.0/GameMate-Setup-0.2.0-x64.exe",
+      "size": 147047054,
+      "sha256": "f6307a88ce02ba89213e90be8a2215e8f584fbe29194d03c8a3a23420dc0f9e2",
+      "sha512": "WwP5qztfy6rQvGStNTzZozRu3amHd8L/Z1D6IQuu5tqU6jjnt9RCItBaA3AcUD/gu1XMzOOP/h/FfVzfBW/fNw==",
+      "signed": false
+    },
+    {
+      "kind": "portable",
+      "platform": "windows",
+      "arch": "x64",
+      "name": "GameMate-Portable-0.2.0-x64.exe",
+      "url": "https://github.com/web3-dark/GameMate-Releases/releases/download/v0.2.0/GameMate-Portable-0.2.0-x64.exe",
+      "size": 146771652,
+      "sha256": "b9ca7db0df717e0ef79b74b887e8d59dea9d1afaa10c25b8be98ee1e828d44ce",
+      "sha512": "XChafqLmOVau3gDRVjAMR+KQRIVTOAui5dYqou+SdtUidmmmXDAuMPve4pb1mJA3y9+DpWzV6M3Lvk3jqW6J2A==",
+      "signed": false
+    },
+    {
+      "kind": "manifest",
+      "platform": "windows",
+      "arch": "x64",
+      "name": "latest.yml",
+      "url": "https://github.com/web3-dark/GameMate-Releases/releases/download/v0.2.0/latest.yml",
+      "size": 353,
+      "sha256": "972caebd393e604ce63f7aa62e52e5741079926e6ce5ab4455c3ce4301c14578",
+      "sha512": "REYUafS6GxqG1366ySOSnv1npeIvZiOcEAdKkTuWJ1DNGkvfRkJFRPbsHfj5++nWH26kJUnt0JYdF/mSWMruTQ=="
+    },
+    {
+      "kind": "blockmap",
+      "platform": "windows",
+      "arch": "x64",
+      "name": "GameMate-Setup-0.2.0-x64.exe.blockmap",
+      "url": "https://github.com/web3-dark/GameMate-Releases/releases/download/v0.2.0/GameMate-Setup-0.2.0-x64.exe.blockmap",
+      "size": 154216,
+      "sha256": "7ca0bc3390e8ddc3b0c733816ca17e499c333048baee59fea474450781077640",
+      "sha512": "jyJInoZMh3AdUXlfEQ5+AkXRvad0Hd02RGtHnggfXuGGDV8C/NXdg/ic0DLMzudJSBFIX4Xw2FUTvzs3RVMz+g=="
+    }
+  ],
+  "notes": [
+    "Windows 安装版与便携版，支持 Windows 11 x64。",
+    "三维桌面陪伴角色、语音互动、聊天工作台和双主题界面。",
+    "英雄联盟与饥荒联机版资料入口，游戏库预留后续扩展位置。",
+    "安装版支持检查更新、查看下载进度、取消下载与确认后重启安装；便携版通过官网下载新版替换。",
+    "官网提供实际安装包、文件大小、SHA-256 校验值、更新日志和服务部署说明。"
+  ]
+}
