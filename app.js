@@ -155,11 +155,6 @@ function applyRelease(manifest) {
     if (releaseUrl) anchor.href = releaseUrl;
   });
   document.querySelectorAll('.setup-link').forEach(anchor => { anchor.href = './setup.html'; });
-  if (repository) document.querySelectorAll('.server-doc-link').forEach(anchor => {
-    anchor.href = `${repository}/blob/main/apps/server/DEPLOYMENT.md`;
-    anchor.target = '_blank';
-    anchor.rel = 'noopener noreferrer';
-  });
   const versionElement = document.querySelector('#release-version');
   if (versionElement) versionElement.textContent = published ? `v${manifest.version} · ${published}` : `v${manifest.version} · 等待发布`;
   const logTitle = document.querySelector('#changelog-version');
