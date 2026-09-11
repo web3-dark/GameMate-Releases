@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "version": "0.2.1",
   "publishedAt": "2026-09-11T17:39:58Z",
-  "builtAt": "2026-09-11T17:15:50.904Z",
+  "builtAt": "2026-09-11T17:34:28.047Z",
   "channel": "preview",
   "repository": {
     "owner": "web3-dark",
@@ -19,22 +19,22 @@
       "kind": "installer",
       "platform": "windows",
       "arch": "x64",
-      "name": "GameMate-Setup-0.2.0-x64.exe",
-      "url": "https://github.com/web3-dark/GameMate-Releases/releases/download/v0.2.0/GameMate-Setup-0.2.0-x64.exe",
-      "size": 147047054,
-      "sha256": "f6307a88ce02ba89213e90be8a2215e8f584fbe29194d03c8a3a23420dc0f9e2",
-      "sha512": "WwP5qztfy6rQvGStNTzZozRu3amHd8L/Z1D6IQuu5tqU6jjnt9RCItBaA3AcUD/gu1XMzOOP/h/FfVzfBW/fNw==",
+      "name": "GameMate-Setup-0.2.1-x64.exe",
+      "url": "https://github.com/web3-dark/GameMate-Releases/releases/download/v0.2.1/GameMate-Setup-0.2.1-x64.exe",
+      "size": 147047734,
+      "sha256": "02f9956d3a522cf660fdc22cfde85cc532b43364f7568ecfb16547c4ff0aa8a2",
+      "sha512": "uO4JjF37PSBIThjPAaqWM8JUW5lddl+Gp906T93Wq6oNyt1LW0PZoonDfctA+n1p5graPmTKOnb/pRnhTO+r8g==",
       "signed": false
     },
     {
       "kind": "portable",
       "platform": "windows",
       "arch": "x64",
-      "name": "GameMate-Portable-0.2.0-x64.exe",
-      "url": "https://github.com/web3-dark/GameMate-Releases/releases/download/v0.2.0/GameMate-Portable-0.2.0-x64.exe",
-      "size": 146771652,
-      "sha256": "b9ca7db0df717e0ef79b74b887e8d59dea9d1afaa10c25b8be98ee1e828d44ce",
-      "sha512": "XChafqLmOVau3gDRVjAMR+KQRIVTOAui5dYqou+SdtUidmmmXDAuMPve4pb1mJA3y9+DpWzV6M3Lvk3jqW6J2A==",
+      "name": "GameMate-Portable-0.2.1-x64.exe",
+      "url": "https://github.com/web3-dark/GameMate-Releases/releases/download/v0.2.1/GameMate-Portable-0.2.1-x64.exe",
+      "size": 146772338,
+      "sha256": "0db982ea0ae387be3a4c6610fd017dd8e29c5ee89b6e87915d992d2e044b3e7f",
+      "sha512": "f/ZMhjP/6Ll0yWjeyP0RqbrsnCpRjPWSPf967zU/RDYMmK+zfvInhDgCygkUvT1R6xuZM64nYLz8lKw4AEV5NQ==",
       "signed": false
     },
     {
@@ -42,27 +42,26 @@
       "platform": "windows",
       "arch": "x64",
       "name": "latest.yml",
-      "url": "https://github.com/web3-dark/GameMate-Releases/releases/download/v0.2.0/latest.yml",
+      "url": "https://github.com/web3-dark/GameMate-Releases/releases/download/v0.2.1/latest.yml",
       "size": 353,
-      "sha256": "972caebd393e604ce63f7aa62e52e5741079926e6ce5ab4455c3ce4301c14578",
-      "sha512": "REYUafS6GxqG1366ySOSnv1npeIvZiOcEAdKkTuWJ1DNGkvfRkJFRPbsHfj5++nWH26kJUnt0JYdF/mSWMruTQ=="
+      "sha256": "3a594a438f0d574391bc166b8c6fb7949327d3679d633d3708a4a808c0f43bab",
+      "sha512": "tdFvUn8BvEtuPuri/4hpzNHfZXRA2Ioa6Vy8gRGn9AktbC9Lu1DwfM/+Dh7TJW4sUMk/BhWf3h9WPQeOnpwbtw=="
     },
     {
       "kind": "blockmap",
       "platform": "windows",
       "arch": "x64",
-      "name": "GameMate-Setup-0.2.0-x64.exe.blockmap",
-      "url": "https://github.com/web3-dark/GameMate-Releases/releases/download/v0.2.0/GameMate-Setup-0.2.0-x64.exe.blockmap",
-      "size": 154216,
-      "sha256": "7ca0bc3390e8ddc3b0c733816ca17e499c333048baee59fea474450781077640",
-      "sha512": "jyJInoZMh3AdUXlfEQ5+AkXRvad0Hd02RGtHnggfXuGGDV8C/NXdg/ic0DLMzudJSBFIX4Xw2FUTvzs3RVMz+g=="
+      "name": "GameMate-Setup-0.2.1-x64.exe.blockmap",
+      "url": "https://github.com/web3-dark/GameMate-Releases/releases/download/v0.2.1/GameMate-Setup-0.2.1-x64.exe.blockmap",
+      "size": 153508,
+      "sha256": "c0b326b157acf8f382bc3fc9dbe43e4682f66d088a33267a6c31a3bf61bcc653",
+      "sha512": "uy7PEJM1Gqd8bz1TFEE6MWoKSESY3F2irLmcC4OCa7D5k6bmgkBA9vEqX0tncyemPU6eDGw7QS2D+BZhgu1Sjg=="
     }
   ],
   "notes": [
-    "Windows 安装版与便携版，支持 Windows 11 x64。",
-    "三维桌面陪伴角色、语音互动、聊天工作台和双主题界面。",
-    "英雄联盟与饥荒联机版资料入口，游戏库预留后续扩展位置。",
-    "安装版支持检查更新、查看下载进度、取消下载与确认后重启安装；便携版通过官网下载新版替换。",
-    "官网提供实际安装包、文件大小、SHA-256 校验值、更新日志和服务部署说明。"
+    "修复安装器异步启动失败时的退出竞态，失败后恢复应用并明确提示重新打开或从发布页安装。",
+    "Windows x64 安装版与便携版继续通过公开 `GameMate-Releases` 仓库提供下载。",
+    "安装版更新仍需用户手动检查、下载并确认重启安装；便携版下载新版替换。",
+    "当前构建未配置 Authenticode 代码签名，请在运行前核对官网展示的 SHA-256 校验值。"
   ]
 }
