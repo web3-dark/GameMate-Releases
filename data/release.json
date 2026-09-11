@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "0.2.0",
-  "publishedAt": "2026-09-11T17:27:45Z",
+  "version": "0.2.1",
+  "publishedAt": "2026-09-11T17:39:58Z",
   "builtAt": "2026-09-11T17:15:50.904Z",
   "channel": "preview",
   "repository": {
@@ -9,7 +9,7 @@
     "name": "GameMate-Releases",
     "url": "https://github.com/web3-dark/GameMate-Releases"
   },
-  "releaseUrl": "https://github.com/web3-dark/GameMate-Releases/releases/tag/v0.2.0",
+  "releaseUrl": "https://github.com/web3-dark/GameMate-Releases/releases/tag/v0.2.1",
   "websiteUrl": "https://web3-dark.github.io/GameMate-Releases/",
   "distribution": "github",
   "updateFeed": "https://github.com/web3-dark/GameMate-Releases/releases/latest/download/latest.yml",
@@ -65,4 +65,4 @@
     "安装版支持检查更新、查看下载进度、取消下载与确认后重启安装；便携版通过官网下载新版替换。",
     "官网提供实际安装包、文件大小、SHA-256 校验值、更新日志和服务部署说明。"
   ]
-}\n
+}
